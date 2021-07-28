@@ -1,4 +1,4 @@
-##Background
+## Background
 
 Recently I had to develop a Public Wifi solution leveraging Ubiquiti equipment.
 I wasn't interested in building my own guest portal and therefore was primarily looking at using the one built into the controller.
@@ -13,7 +13,7 @@ However, the guest portal doesn't provide an option to end all user sessions at 
 Therefore, an edge case  is that if a user connects in the afternoon of one day, they will not be able to logon in the morning of the next.
 
 
-##Overview
+## Overview
 
 The Ubiquiti wireless solution provides a decent enough guest portal for most use cases but it doesn't have a good way to clear user sessions at the end of the day.
 In order to do this, I created a Powershell script to iterate through each site, extend and then disconnect all sessions at the end of each day.
